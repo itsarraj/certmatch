@@ -1,0 +1,23 @@
+[package]
+name = "certmatch"
+version = "0.1.0"
+edition = "2021"
+description = "Verifies a certificate and private key actually belong together, and that a certificate chain is correctly ordered — catches the classic wrong-key-deployed footgun"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/certmatch"
+readme = "README.md"
+keywords = ["tls", "ssl", "certificate", "cli", "nginx"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "certmatch"
+path = "src/lib.rs"
+
+[[bin]]
+name = "certmatch"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
