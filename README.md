@@ -8,6 +8,12 @@ deployed with this cert" nginx/deploy footgun, and the "chain file has
 the intermediate and leaf swapped" mistake, both usually only discovered
 after a real TLS handshake starts failing in production.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
